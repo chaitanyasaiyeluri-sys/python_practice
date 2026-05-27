@@ -30,6 +30,6 @@ print("7.1",2,3,4,sep=',')
 print(f"8.Loading",end='.... ')
 print('code')
 
-#method 9: \n printing in new lines while in same print statement
+#method 9: \n printing in new lines while in same print statement, \n is used only inside ""
 print("9.First\n"," Second","\n"," Third")
 
