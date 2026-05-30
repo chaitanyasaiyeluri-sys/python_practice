@@ -32,3 +32,17 @@ print('code')
 
 #method 9: \n printing in new lines while in same print statement, \n is used only inside ""
 print("9.First\n"," Second","\n"," Third")
+
+
+'''
+input() function is used is to take the input from the user
+defaultly input() consider its data as a string
+so casting has to be made by requirement
+'''
+#default
+Name=input("Enter your name: ")
+print('Hi!',Name,type(Name))#returns a str 
+
+#casting
+number=int(input("Enter your Phone Number: "))
+print('your Phone Number is:',number,end="")

@@ -123,4 +123,23 @@ print("\nWalrus Operator:")
 if (length := len("Python")) > 5:
     print("Length of PYTHON:", length)
 
+''' precedence of operators
+in case of same precedence ,evaluates from left
+exception in exponential ** evaluates from right
+
+()
+**
++x  -x
+*  /  //  %
++  -
+<< >>
+&
+^
+|
+Comparisons
+not
+and
+or
+Assignment
+'''
 
