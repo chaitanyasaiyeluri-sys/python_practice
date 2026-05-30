@@ -32,4 +32,3 @@ print('code')
 
 #method 9: \n printing in new lines while in same print statement, \n is used only inside ""
 print("9.First\n"," Second","\n"," Third")
-
