@@ -1,11 +1,12 @@
 '''String is a data type which stores sequence of characters.
 strings can be enclosed by " " or ' ' or ''' ''' or """ """
+Strings are immutable 
 Escape sequences are special character combinations that start with a backslash \
 They are used to represent characters that are difficult to type directly.
 | Escape Sequence | Meaning      |
 | --------------- | ------------ |
 | `\n`            | New line     |
-|`\t`             | Tab space    |
+| `\t`            | Tab space    |
 | `\\`            | Backslash    |
 | `\'`            | Single quote |
 | `\"`            | Double quote |
