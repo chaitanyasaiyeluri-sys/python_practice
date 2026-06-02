@@ -42,4 +42,11 @@ while i<len(tup):
     else:
         print('searching...')
     i +=1
-    
+
+#factorial of n using while loop    
+i=1
+n=int(input('Enter a number to get Factorial of  that number: '))
+tot=1
+while i <=n :
+    tot *=i
+    i +=1
