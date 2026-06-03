@@ -2,6 +2,11 @@
 syntax:
 while condition :
     code
+
+#break and continue keywords:
+break stops an entire loop
+continue skips the current iteration
+both of them only used with loops ,not with conditional statements
 '''
 #printing 1 to 100 numbers
 i=1
@@ -50,3 +55,4 @@ tot=1
 while i <=n :
     tot *=i
     i +=1
+print('Fact=',tot)
