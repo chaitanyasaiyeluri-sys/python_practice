@@ -1,8 +1,8 @@
 import random
 print("Welcome To Rock Paper Scissors Game")
-uip=input("enter your choice(rock,paper,scissors): ")
-rps=["rock","paper","scissors"]
-rip=random.choice(rps)
+uip=input("enter your choice(rock,paper,scissors): ")#user input
+rps=["rock","paper","scissors"]#list of options
+rip=random.choice(rps)#random input 
 if uip in rps:
     print(f"Computer choosed: {rip}\nYou choosed: {uip}")
     if uip==rip:
