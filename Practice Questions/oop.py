@@ -1,4 +1,5 @@
 class student:
+    name="anonymous"
     def __init__(self,name,m1,m2,m3):
         self.name=name
         self.m1=m1
@@ -9,3 +10,6 @@ class student:
 
 s1=student('chay',90,80,70)
 s1.average()
+print(student.name)
+print(student)
+print(s1)

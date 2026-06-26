@@ -1,8 +1,8 @@
 '''
 OOP is a way of organizing code using Classes and Objects.
-
 '''
-#Class: is a blueprint/template for creating objects.
+#Class: is a blueprint for creating objects.
+#class is called automatically when obj is created
 #Pascal case is used for naming like class WelcomeToClass:
 #you can also use () after class name
 
@@ -25,7 +25,7 @@ print(a)
 #print(MyClass)
 
 #Constructor: is a special method that runs automatically when an object is created.
-#All classes have a built-in method called __init__(), which is always executed when the class is being initiated.
+#All classes have a built-in constructor called __init__(), which is always executed when the class is being initiated.
 #The __init__() method is used to assign values to object properties, or to perform operations that are necessary when the object is being created.
 #self keyword refers to the current object.
 class Student:
@@ -37,7 +37,8 @@ s1 = Student("Chay")
 
 print(s1.name)
 
-#methods
+#methods: its a function inside a class,runs only when called.
+#instance method: uses self 
 class Person:
   def __init__(self, name):
     self.name = name
@@ -58,4 +59,27 @@ class Calculator:
 calc = Calculator()
 print(calc.add(5, 3))
 print(calc.multiply(4, 7))
+
+#static method: doesnt takes self parameter by using  a decorator over that method
+class hello:
+  @staticmethod
+  def greet():
+    print('hi')
+
+s1=hello()
+s1.greet()#without static returns TypeError: hello.greet() takes 0 positional arguments but 1 was given
+#bcz of object invokes,if invoke from class directly it works like hello.greet()
+
+#class method:used to work with class variables and uses cls
+class Cse:
+  section = 'C'
+  print(section,'Before set')
+  @classmethod
+  def set_sec(cls,sec):
+    cls.section = sec#or without dec you can use self.__class__.section=sec
+    print(cls.section,'After set')
+
+cls=Cse()
+cls.set_sec('D')
+
 
