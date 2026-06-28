@@ -35,7 +35,7 @@ def sum(n):
 n=int(input('enter a number n to get sum of first n natural numbers : '))
 print('sum=',sum(n))
 
-#print elements of a list using list and index as parameters ny recursion
+#print elements of a list using list and index as parameters by recursion
 def ele(list,idx):#we can also initial idx=0 so that we dont have to pass the idx argument
     if idx==len(list):
         return
